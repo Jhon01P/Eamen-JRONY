@@ -5,10 +5,16 @@
  */
 package ec.edu.insuperior.vista;
 
+import ec.edu.insuperior.controlador.Controlador;
+
 /**
  *
  * @author Administrador
  */
 public class Aplicacion {
-    
+     public static void main(String[] args) {
+         Controlador c=new Controlador();
+         c.mostrarFrmLoggin();
+        
+}
 }
