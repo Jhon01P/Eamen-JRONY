@@ -18,6 +18,7 @@ Controlador controlador ;
      */
     public FrmLoggin(Controlador controlador) {
         initComponents();
+         this.setLocationRelativeTo(null);
         this.controlador=controlador;
     }
 
@@ -123,6 +124,7 @@ Controlador controlador ;
     private void btnIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarActionPerformed
 if (cbxModo.getSelectedItem().toString().equals("Administrativo")){
     controlador.mostarFrmAdministrativo();
+    
             }
  if (cbxModo.getSelectedItem().toString().equals("Estudiante")) {
     controlador.mostarFrmEstudiante();   

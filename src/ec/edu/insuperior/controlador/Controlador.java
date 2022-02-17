@@ -23,15 +23,23 @@ public class Controlador {
     FrmProfesor frmprofesor=new  FrmProfesor(this);
 
     public void mostarFrmAdministrativo(){
+        frmadministrativo.setExtendedState(frmadministrativo.MAXIMIZED_BOTH);
         frmadministrativo.setVisible(true);
+        frmloggin.setVisible(false);
         }
     public void mostarFrmEstudiante(){
+        frmestudiante.setExtendedState(frmadministrativo.MAXIMIZED_BOTH);
         frmestudiante.setVisible(true);
+         frmloggin.setVisible(false);
     }
     public void mostrarFrmLoggin(){
+        frmloggin.setLocationRelativeTo(null);
         frmloggin.setVisible(true);
+         
     }
     public void mostarFrmProfesor(){
+        frmprofesor.setExtendedState(frmadministrativo.MAXIMIZED_BOTH);
         frmprofesor.setVisible(true);
+         frmloggin.setVisible(false);
     }
 }

@@ -5,6 +5,7 @@
  */
 package ec.edu.insuperior.vista;
 
+import ec.edu.insuperior.controlador.Conexion;
 import ec.edu.insuperior.controlador.Controlador;
 
 /**
@@ -16,5 +17,6 @@ public class Aplicacion {
          Controlador c=new Controlador();
          c.mostrarFrmLoggin();
         
+          Conexion.getConexion();
 }
 }
